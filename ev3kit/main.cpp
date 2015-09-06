@@ -1,12 +1,11 @@
 #include <iostream>
-#include <boost/filesystem.hpp>
+#include <ev3dev.h>
 
 int main()
 {
-    using namespace boost::filesystem;
-    directory_entry sys("/sys");
-    
-    
+    ev3dev::lcd lcd;
+    std::cout << "Resolution: " << lcd.resolution_x() << 'x' << lcd.resolution_y() << std::endl;
+
 
     return 0;
 }

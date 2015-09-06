@@ -12,7 +12,6 @@ ExternalProject_Add(boost
     INSTALL_COMMAND ./b2 install --prefix=${ROOT_PREDEPENDENCIES}
     BUILD_IN_SOURCE 1
 )
-
 set(Boost_SYSTEM_LIBRARY ${ROOT_PREDEPENDENCIES}/lib/libboost_system.so 
 	CACHE filepath "Boost System Library")
 set(Boost_FILESYSTEM_LIBRARY ${ROOT_PREDEPENDENCIES}/lib/libboost_filesystem.so

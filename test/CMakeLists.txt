@@ -6,5 +6,3 @@ function(ev3kit_test NAME)
     target_link_libraries(${NAME} ${Boost_LIBRARIES} ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY})
     add_test(${NAME} ${NAME})
 endfunction()
-
-ev3kit_test(device)
